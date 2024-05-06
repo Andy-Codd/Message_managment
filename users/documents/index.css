@@ -1,0 +1,150 @@
+
+Body{
+    background-image: linear-gradient(45deg, #19001faa, #19001faa), url("../images/fond1.png");
+    background-color: #0e0111aa;
+    /*background: linear-gradient(90deg, #3f0b1b, #19001f);*/
+    background-size: 100vw 100vh;
+    color: #fffa;
+}
+
+header h1{
+    text-align: center;
+    font-family: mp-linux;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+    line-height: 40px;
+    color: auto;
+    margin: 30px;
+    text-shadow: 0 0 5px  #0e0111;
+    margin-bottom: 80px;
+    word-wrap: break-word;
+}
+header h1 span{
+    font-size: 2.1em;
+    line-height: 60px;
+    letter-spacing: -6px;
+}
+
+section{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*background-color: #19001faa;*/
+    backdrop-filter: blur(10px);
+    width: 90vw;
+    padding: 30px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px 2px #ec0045;
+}
+
+section #main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    position: relative;
+    padding: 30px;
+}
+
+section #main #boutton{
+    margin: 15px;
+}
+
+section #boutton a{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #ec0045;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-family: mp-alert,'hack', mp-hack;
+    letter-spacing: 0px;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ec0045;
+    transition: all .05s;
+    width: 300px;
+}
+section #boutton a[id="send"]{
+    font-size: 2.1em;
+    border-width: 4px;
+    width: 330px;
+}
+section #boutton a:hover{
+    background-color: #0e0111;
+    border-style: dashed;
+    transform: scale(1.05);
+}
+section #boutton a:active{
+    transform: scale(1) rotate(1deg);
+}
+section #boutton a span{ margin-left: 10px; }
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Trebuchet MS", mp-trebuchet;
+    font-size: .8em;
+    text-align: center;
+}
+
+@media screen and (max-height: 935px){
+    section{
+        position: relative;
+        top: unset;
+        left: unset;
+        width: auto;
+        transform: unset;
+        margin-bottom: 60px;
+    }
+    footer{
+        z-index: -1;
+        position: fixed;
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 650px){
+    header h1{
+        font-size: 1.5em;
+    }
+    section #boutton a{
+        font-size: 1.5em;
+        width: auto;
+    }
+    section #boutton a[id="send"]{
+        font-size: 1.9em;
+        width: auto;
+    }
+    section{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 120px;
+    }
+    section #main{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    footer{
+        margin-top: 160px;
+    }
+}
+@media screen and(max-width: 410px){
+    section #boutton a{
+        width: 150px;
+    }
+    header h1{
+        font-size: 1.2em;
+    }
+    section #boutton a{
+        font-size: 1.2em;
+    }
+    section #boutton a[id="send"]{
+        font-size: 1.3em;
+    }
+}

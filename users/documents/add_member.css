@@ -1,0 +1,117 @@
+Body{
+    background-image: linear-gradient(45deg, #19001faa, #19001faa), url("../images/fond1.png");
+    background-color: #0e0111aa;
+    /*background: linear-gradient(90deg, #3f0b1b, #19001f);*/
+    background-size: 100vw 100vh;
+    color: #fffa;
+}
+
+#backToHome a{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Trebuchet MS", mp-trebuchet;
+    font-weight: 900;
+    border: 0px solid red;
+    width: 60px;
+    margin: 20px;
+    margin-top: 0;
+    color: #ec0045;
+    padding: 15px;
+    background-color: #0e0111;
+    border-radius: 10px;
+}
+#backToHome a span{ letter-spacing: -2px; }
+#backToHome a:hover{
+    background-color: transparent;
+    border: 2px solid #ec0045;
+    padding: 13px;
+}
+#backToHome a:active{
+    background-color: #0e0111;
+    border: none;
+    transform: rotate(3deg);
+    padding: 15px;
+}
+
+h1{
+    text-align: center;
+    font-family: mp-linux;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 40px;
+    color: auto;
+    margin: 30px;
+    text-shadow: 0 0 5px  #0e0111;
+    word-wrap: break-word;
+}
+
+
+form{
+    font-family: mp-nova;
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+fieldset{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+fieldset legend{
+    border: 2px solid #fffa;
+    padding: 5px 10px;
+    border-radius: 10px; 
+}
+
+input{
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #ec0045;
+    font-size: 1.1em;
+    color: #ec0045;
+    font-family: "Trebuchet MS", mp-trebuchet;
+    padding: 5px;
+}
+input[type="text"]{
+    width: 80vw;
+}
+input[type="submit"]{
+    background-color: #0e0111;
+    border: 2px solid #ec0045;
+    padding: 5px 10px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+input[type="submit"]:hover{
+    font-size: 1.2em;
+}
+
+#toDel{
+    width: 100px;
+    border: 2px solid #ec0045;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    #backToHome{
+        transform: scale(0.6);
+        position: fixed;
+        top: 5px;
+        left: -10px;
+    }
+    h1{ margin-top: 60px; }
+}

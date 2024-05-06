@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="fonts/font.css">
+    <link rel="stylesheet" href="documents/index.css"/>
+
+    <script type="text/javascript">
+        <!--
+        function hide(){
+            var x = document.getElementById('mypass');
+            if(x.type == "password"){
+                x.type = "text";
+            }else{
+                x.type = "password";
+            }
+        }
+        //-->
+    </script>
+
+    <style type="text/css">
+        
+        form{
+            width: 400px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        fieldset{
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            height: 400px;
+        }
+        legend{
+            text-align: center;
+            font-family: mp-trebuchet;
+            font-size: 1.6em;
+            padding: 10px;
+            border: 2px solid #fffa;
+            border-radius: 10px;
+            background-color: #0e0111;
+            color: #ec0045;
+        }
+        #zone{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-content: center;
+            align-items: center;
+        }
+        #zone input{
+            padding: 10px;
+            font-size: 1.2em;
+            font-family: mp-trebuchet;
+            color: #ec0045;
+            border-radius: 10px;
+            /*background-color: #fff9;*/
+            background-color: transparent;
+            border: 2px solid #ec0045;
+        }
+        #zone input:focus{
+            border: 5px solid #ec0045;
+        }
+        #zone input + span{
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        fieldset + input{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 50px;
+            font-family: mp-trebuchet;
+            padding: 8px;
+            font-size: 1.1em;
+            border: 2px solid #ec0045;
+            color: #ec0045;
+            background-color: #0e0111;
+            cursor: pointer;
+        }
+        fieldset + input:hover{
+            border-style: dashed;
+            border-radius: 10px;
+        }
+        @media screen and (max-width: 500px){
+            form{ width: auto; }
+            legend{ border: none; font-size: 1.2em; }
+            #zone{ position: relative; transform: scale(.8). translateX(-50%); }
+            fieldset{ border-left: none; border-right: none; }
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <form action="documents/connexion.php" method="post">
+        
+        <fieldset>
+            <legend>Connexion Administrateur</legend>
+
+            <div id="zone">
+                <input type="password" name="mypass" id="mypass" placeholder="Mot de passe..." required />
+                <span onclick="hide()" style="cursor: pointer;">&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="25" fill="#ec0045"><path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"/></svg>
+                </span>
+            </div>
+
+        </fieldset>
+
+        <input type="submit" value="Verifier">
+
+    </form>
+
+
+    <footer>
+        <p>🄯Copyleft Codd-Pleg | 2024 codd5126@gmail.com</p>
+    </footer>
+    
+</body>
+</html>

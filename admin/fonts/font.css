@@ -1,0 +1,37 @@
+/* Definition of fonts */
+@font-face{
+	font-family: mp-newcycle;
+	src: url('NewsCycle-Regular.ttf');
+}
+@font-face{
+	font-family: mp-trebuchet;
+	src: url('trebuc.ttf');
+}
+@font-face{
+	font-family: mp-asiana;
+	src: url('asiana.ttf');
+}
+@font-face{
+	font-family: mp-above;
+	src: url('above_bold.otf');
+}
+@font-face{
+	font-family: mp-jansina;
+	src: url('JANSINA.ttf');
+}
+@font-face {
+		font-family: mp-nova;
+		src: url('NovaSquare-Book.ttf');
+}
+@font-face {
+	font-family: mp-hack;
+	src: url('Hack-Regular.ttf');
+}
+@font-face {
+	font-family: mp-alert;
+	src: url('The\ Blue\ Alert.ttf');
+}
+@font-face {
+	font-family: mp-linux;
+	src: url(LinBiolinum_K.otf);
+}
